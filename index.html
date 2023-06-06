@@ -59,7 +59,7 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
 
-                        <div class="swiper-wrapper">
+            <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide"><img src="imagens/ApacheKafka.svg" alt=""></div>
               <div class="swiper-slide"><img src="imagens/Arquitetura.svg" alt=""></div>
@@ -72,16 +72,36 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-          
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
+        </div>
+
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+
+                <img class="descricao__imagem" src="imagens/Angular.svg" alt="Logo Angular">
+            </div>
+
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="imagens/Favoritos.svg" alt=""></li>
+                    <li class="botoes__item"><img src="imagens/Compras.svg" alt=""></li>
+                </ul>
+
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+
+            </div>
+
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             // speed: 400,
-             // autoplay: {
+            // autoplay: {
             // delay: 1,
             // },
             spaceBetween: 10,
