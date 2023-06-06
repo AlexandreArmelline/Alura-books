@@ -71,3 +71,7 @@
     font-weight: 700;
     text-decoration: none;
 }
+
+.card__descricao__imagem{
+   margin-bottom: 9px;
+}
