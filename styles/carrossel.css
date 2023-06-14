@@ -109,6 +109,10 @@
         width: 90%;
         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.486);
      }
+
+     .swiper-wrapper:hover{
+        height: 23em;
+     }
  
 }
 
@@ -126,7 +130,8 @@
     }
 
     .swiper{
-        width: 50%;
+        width:50%;
+        
     }
 
     .swiper-slide img{
