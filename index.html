@@ -17,7 +17,7 @@
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label class="container__rotulo" for="menu">
             <span class="cabecalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista__menu">
@@ -44,7 +44,7 @@
 
         <ul class="opcoes">
             <input class="opcoes__botao" type="checkbox" name="" id="opcoes-menu">
-            <label for="opcoes-menu">
+            <label class="opcoes__rotulo" for="opcoes-menu">
             <li class="opcoes__item">Categorias</li>
             </label>
             <ul class="lista__menu">
@@ -98,13 +98,13 @@
                 <div class="swiper-pagination"></div>
 
                 <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="imagens/ApacheKafka.svg" alt=""></div>
-                <div class="swiper-slide"><img src="imagens/Arquitetura.svg" alt=""></div>
-                <div class="swiper-slide"><img src="imagens/Javascript.svg" alt=""></div>
-                <div class="swiper-slide"><img src="imagens/Nodejs.svg" alt=""></div>
-                <div class="swiper-slide"><img src="imagens/Tuning.svg" alt=""></div>
-                <div class="swiper-slide"><img src="imagens/Portugol.svg" alt=""></div>
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img class="carrossel__imagem" src="imagens/ApacheKafka.svg" alt=""></div>
+                    <div class="swiper-slide"><img class="carrossel__imagem" src="imagens/Arquitetura.svg" alt=""></div>
+                    <div class="swiper-slide"><img class="carrossel__imagem" src="imagens/Javascript.svg" alt=""></div>
+                    <div class="swiper-slide"><img class="carrossel__imagem" src="imagens/Nodejs.svg" alt=""></div>
+                    <div class="swiper-slide"><img class="carrossel__imagem" src="imagens/Tuning.svg" alt=""></div>
+                    <div class="swiper-slide"><img class="carrossel__imagem" src="imagens/Portugol.svg" alt=""></div>
                 </div>
                         
                 <!-- If we need navigation buttons -->
@@ -332,16 +332,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            // speed: 400,
-            // autoplay: {
-            // delay: 1,
-            // },
+            speed: 1000,
+            autoplay: {
+            delay: 2000,
+            },
             spaceBetween: 10,
             slidesPerView: 3,
             pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
             },
+            loop: true,
         });
     </script>
 </body>

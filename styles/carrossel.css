@@ -104,7 +104,14 @@
         width: 40%;
         margin: 2em auto;
     }
+
+    .swiper-slide img:hover{
+        width: 90%;
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.486);
+     }
+ 
 }
+
 
 
 @media screen and (min-width: 1728px){
